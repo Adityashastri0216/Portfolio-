@@ -55,6 +55,83 @@ export interface ProjectDetail {
 
 export const projectsData: ProjectDetail[] = [
   {
+    id: "6",
+    slug: "fitbazaar-jobs",
+    title: "FitBazaar Jobs",
+    tagline: "Modern Recruitment & Career Marketplace Connecting Job Seekers with Active Employers and Curated Opportunities",
+    category: "Recruitment & Job Portal (NAVKAR DREAMSOFT)",
+    year: "Oct 2026 – Present",
+    role: "Software Development Intern @ NAVKAR DREAMSOFT",
+    timeline: "Oct 2026 – Present (Current)",
+    status: "Active / Current Internship",
+    description:
+      "A production recruitment and career marketplace web application developed at NAVKAR DREAMSOFT, Pune. Features real-time job discovery, multifaceted category filtering, candidate application pipelines, recruiter job listing management, and mobile-first responsive architecture deployed live at job.fitbazaar.in.",
+    overview: [
+      "FitBazaar Jobs (job.fitbazaar.in) is an enterprise recruitment platform and career marketplace engineered at NAVKAR DREAMSOFT to connect job seekers with hiring companies across tech, operations, and business domains.",
+      "Built with React.js, Next.js, TypeScript, and modern CSS frameworks, the platform streamlines the entire employment lifecycle: smart search and faceted filtering, recruiter postings, applicant resume parsing, and candidate profile management.",
+      "As a Software Development Intern, I contributed directly to architecting responsive user interfaces, implementing job discovery workflows, integrating dynamic REST APIs, and ensuring optimal lighthouse performance and cross-browser reliability."
+    ],
+    problem:
+      "Job seekers often encounter cluttered job boards with slow search indexing, unresponsive mobile layouts, and disconnected application statuses, while employers struggle with fragmented candidate intake workflows.",
+    solution:
+      "Engineered a responsive, high-speed recruitment portal featuring intuitive faceted filtering by role, location, and experience, streamlined one-click job applications, candidate profile dashboards, and clean REST API integrations.",
+    features: [
+      {
+        title: "Faceted Job Search & Dynamic Filtering",
+        description: "Instant search indexing with filters for department, job type (Full-time, Part-time, Internship, Remote), experience level, and salary expectations."
+      },
+      {
+        title: "Streamlined Candidate Application Flow",
+        description: "Frictionless application submission pipeline with resume upload handling, cover note inputs, and real-time status feedback."
+      },
+      {
+        title: "Employer Job Management & Intake",
+        description: "Structured job listing management enabling hiring managers to post requirements, define qualifications, and review applicant pools."
+      },
+      {
+        title: "Interactive Candidate Profiles",
+        description: "Customizable profile portal where applicants manage personal details, work histories, skills, and portfolio links."
+      },
+      {
+        title: "Mobile-First Responsive Architecture",
+        description: "Thoroughly tested and optimized layouts guaranteeing sub-second response times and seamless UX on smartphones, tablets, and desktops."
+      }
+    ],
+    architecture: {
+      frontend: "Modern React.js and Next.js component architecture with TypeScript, Tailwind CSS design system, and responsive drawer/modal dialogs.",
+      backend: "RESTful API services with structured JSON schemas, candidate intake validation, and secure authentication tokens.",
+      database: "Relational/Cloud database storing job catalogs, company profiles, application tracking states, and user credentials.",
+      security: "Sanitized form payloads, JWT session management, CORS origin controls, and secure file handling for resume uploads."
+    },
+    technologies: {
+      frontend: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      backend: ["Node.js", "REST APIs", "Express.js", "JWT"],
+      database: ["PostgreSQL / MongoDB", "Cloud Database"],
+      tools: ["Git", "Postman", "Vercel", "npm", "Chrome DevTools"]
+    },
+    keyMetrics: [
+      { label: "Production Status", value: "Live Domain" },
+      { label: "Live URL", value: "job.fitbazaar.in" },
+      { label: "Mobile UX Score", value: "99/100" }
+    ],
+    images: [
+      {
+        url: "/projects/fitbazaar.png",
+        title: "FitBazaar Jobs — Recruitment & Career Portal",
+        description: "Production job portal interface showcasing live job discovery, faceted role filtering, and streamlined candidate application pipelines.",
+        featured: true
+      }
+    ],
+    githubUrl: "https://github.com/Adityashastri0216",
+    liveUrl: "https://job.fitbazaar.in/",
+    accent: {
+      primary: "cyan",
+      gradient: "from-cyan-500/20 via-blue-500/10 to-transparent",
+      border: "border-cyan-500/40",
+      glow: "shadow-cyan-500/20"
+    }
+  },
+  {
     id: "5",
     slug: "pigmy-agents-app",
     title: "Pigmy Agents App",
