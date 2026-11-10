@@ -55,6 +55,80 @@ export interface ProjectDetail {
 
 export const projectsData: ProjectDetail[] = [
   {
+    id: "5",
+    slug: "pigmy-agents-app",
+    title: "Pigmy Agents App",
+    tagline: "Field Agent Management & Digital Daily Deposit Collection (Pigmy) Platform for Micro-Savings & Credit Cooperatives",
+    category: "Fintech & Micro-Banking",
+    year: "2025",
+    role: "Full Stack Developer (Personal Project)",
+    timeline: "Personal Project",
+    status: "Personal Project • Active",
+    description:
+      "A specialized micro-banking and daily deposit collection (Pigmy) application engineered to digitize grassroots savings workflows. Enables cooperative societies to create agents, authenticate field operators, onboard doorstep customers, record daily cash collections with automated audit trails, and review real-time payment histories and passbook ledgers.",
+    overview: [
+      "Pigmy Agents App is a personal micro-banking platform designed to digitize grassroots Pigmy deposit schemes — a traditional daily savings system widely utilized across India by local shopkeepers, merchants, and daily wage earners.",
+      "In traditional operations, agents travel door-to-door recording small daily deposits in handwritten passbooks and paper ledgers, which are prone to calculation errors, physical card damage, and reconciliation delays. This platform modernizes the entire lifecycle through a responsive, mobile-first web interface.",
+      "The system orchestrates an end-to-end operational flow: (1) Administrative Agent Creation, (2) Secure Agent Authentication, (3) Customer Passbook Enrollment, (4) Instant Daily Payment Recording, and (5) Real-Time Payment History & Ledger Reconciliation."
+    ],
+    problem:
+      "Traditional daily deposit collection schemes rely on manual paper ledger books and physical collection cards. This leads to reconciliation delays, calculation discrepancies, risk of paper card tampering or loss, and lack of real-time visibility into agent daily collections for cooperative societies.",
+    solution:
+      "Architected an end-to-end digital collection portal featuring agent provisioning, JWT session security, customer enrollment with unique account identifiers, instant daily deposit logging with balance recalculation, and a tamper-resistant passbook history module.",
+    features: [
+      {
+        title: "Agent Creation & Role Provisioning",
+        description: "Administrative console to onboard new field agents, generate unique Agent IDs, configure daily collection zones, and set operational limits."
+      },
+      {
+        title: "Secure Field Agent Authentication",
+        description: "Protected agent login portal with JWT-based session security, PIN verification, and credential encryption for field security."
+      },
+      {
+        title: "Customer Enrollment & Account Setup",
+        description: "Rapid customer registration capturing depositor details, KYC data, daily savings target, and generating unique Pigmy account numbers."
+      },
+      {
+        title: "Daily Payment Collection Recording",
+        description: "High-speed daily collection logging interface allowing agents to record cash deposits with instant timestamping and automatic balance updates."
+      },
+      {
+        title: "Passbook & Payment History Ledger",
+        description: "Filterable, date-wise transaction ledger enabling both agents and depositors to audit historical payments, view monthly totals, and verify balances."
+      },
+      {
+        title: "Agent Daily Summary & Reconciliation",
+        description: "End-of-day reconciliation dashboard summarizing total cash collected per route, active saver counts, and automated settlement reports."
+      }
+    ],
+    architecture: {
+      frontend: "Mobile-responsive Next.js & React interface designed for fast field operation, featuring Tailwind CSS styling, responsive tables, and instant touch feedback.",
+      backend: "Node.js & Express RESTful API architecture with modular controllers for agent provisioning, customer accounts, and atomic payment transactions.",
+      database: "Relational database schema with foreign-key relationships connecting Agents, Customers, and immutable daily Payment Ledgers with indexed timestamps.",
+      security: "JWT authentication, bcrypt credential encryption, role-based route middleware (Admin vs Agent), and sanitized input validation."
+    },
+    technologies: {
+      frontend: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Lucide React"],
+      backend: ["Node.js", "Express.js", "REST APIs", "JWT", "Bcrypt"],
+      database: ["PostgreSQL", "Prisma ORM", "Indexed Ledgers"],
+      tools: ["Postman", "Git", "Vercel", "npm"]
+    },
+    keyMetrics: [
+      { label: "Collection Record Speed", value: "<15s" },
+      { label: "Paper Card Dependency", value: "0%" },
+      { label: "Ledger Reconciliation", value: "Real-Time" }
+    ],
+    images: [],
+    githubUrl: "https://github.com/Adityashastri0216",
+    liveUrl: "https://github.com/Adityashastri0216",
+    accent: {
+      primary: "amber",
+      gradient: "from-amber-500/20 via-orange-500/10 to-transparent",
+      border: "border-amber-500/40",
+      glow: "shadow-amber-500/20"
+    }
+  },
+  {
     id: "1",
     slug: "buy-unique",
     title: "Buy Unique",
@@ -121,8 +195,8 @@ export const projectsData: ProjectDetail[] = [
         featured: true
       }
     ],
-    githubUrl: "https://github.com/aditya-shastri",
-    liveUrl: "https://github.com/aditya-shastri",
+    githubUrl: "https://github.com/Adityashastri0216",
+    liveUrl: "https://github.com/Adityashastri0216",
     accent: {
       primary: "cyan",
       gradient: "from-cyan-500/20 via-blue-500/10 to-transparent",
@@ -133,43 +207,43 @@ export const projectsData: ProjectDetail[] = [
   {
     id: "2",
     slug: "jem-soft",
-    title: "JEM Soft",
-    tagline: "Enterprise Workflow Orchestration, Real-Time Analytics & Resource Management Suite",
-    category: "Enterprise SaaS Solution",
-    year: "2024",
-    role: "Full Stack Architect",
-    timeline: "4 Months",
-    status: "Enterprise Deployed",
+    title: "JEM Soft — Insurance Policy Management",
+    tagline: "Enterprise Insurance Policy Management, Automated Premium Calculations & Workflow Orchestration Suite",
+    category: "Enterprise System (Indux Technology)",
+    year: "Feb 2026 – Present",
+    role: "Full Stack Developer Intern @ Indux Technology",
+    timeline: "Feb 2026 – Present (Current)",
+    status: "Active / Current Internship",
     description:
-      "A comprehensive business software solution empowering enterprises to orchestrate internal workflows, track real-time operational revenue KPIs, and govern role-based team permissions.",
+      "A comprehensive insurance policy management platform developed at Indux Technology, Pune. Features end-to-end policy lifecycles, automated premium calculation logic, relational PostgreSQL schemas with Prisma ORM, and high-performance Next.js REST APIs.",
     overview: [
-      "JEM Soft is an enterprise-grade SaaS web platform created to bridge the operational gap between team execution and executive decision-making. Featuring interactive revenue charts, deals pipeline funnels, subscription management tables, and dynamic role management, it empowers managers with 360-degree situational awareness.",
-      "Engineered with Next.js App Router, TypeScript, Prisma ORM, and PostgreSQL, the platform maintains strict data integrity, type-safety across the entire stack, and lightning-fast server-rendered dashboards."
+      "At Indux Technology, Pune, I contribute directly to JEM Soft — an enterprise-grade Insurance Policy Management System designed to streamline insurance operations, automate premium calculations, and govern policy lifecycle states.",
+      "My responsibilities include developing and integrating modular REST APIs using Next.js, TypeScript, Node.js, Express, Prisma ORM, and PostgreSQL, designing normalized relational database schemas, and validating business-critical policy workflows."
     ],
     problem:
-      "Growing companies frequently face fragmented team workflows spread across disparate spreadsheets, leading to data silos, outdated financial reporting, and insecure access control.",
+      "Insurance carriers and brokers struggle with disjointed policy calculation engines, manual underwriting delays, inaccurate premium assessments, and uncoordinated state management across policy renewals.",
     solution:
-      "Consolidated enterprise data into a centralized PostgreSQL relational schema accessed via Prisma ORM, providing real-time aggregation queries, automated deal pipelines, and granular Role-Based Access Control (RBAC).",
+      "Engineered automated policy calculation engines and business logic modules backed by PostgreSQL transactional safety and Prisma ORM, providing instantaneous quote generation, premium calculations, and audit-logged policy state changes.",
     features: [
       {
-        title: "Executive Intelligence Dashboard",
-        description: "Real-time Annual Recurring Revenue (ARR), Monthly Recurring Revenue (MRR), and active user health monitors."
+        title: "Policy Workflow Engine & Premium Calculation",
+        description: "Automated business logic calculating policy premiums based on risk attributes, term options, and underwriting criteria."
       },
       {
-        title: "Interactive Deal Flow Pipeline",
-        description: "Kanban and stage-funnel visualizations for deals from initial lead qualification through to closed contracts."
+        title: "RESTful API Integration Suite",
+        description: "Robust endpoints built with Next.js, TypeScript, and Express for policy creation, amendments, renewals, and claims."
       },
       {
-        title: "Customer Subscription Ledger",
-        description: "Filterable table showing active tiers, renewal dates, payment histories, and direct action triggers."
+        title: "PostgreSQL & Prisma Data Layer",
+        description: "Normalized relational schemas with strict foreign keys, atomic transactions, and indexed policy queries."
       },
       {
-        title: "Role-Based Access Control (RBAC)",
-        description: "Granular permissions system isolating executive financials, team operations, and audit log histories."
+        title: "Module Dependency & Workflow Testing",
+        description: "Rigorous debugging and integration testing across frontend components, API endpoints, and database operations."
       },
       {
-        title: "Automated Reporting Exports",
-        description: "One-click generation of quarterly operational statements and executive presentation summaries."
+        title: "Executive Policy & Claims Overview",
+        description: "Consolidated operational view displaying active policy counts, premium collections, and renewal schedules."
       }
     ],
     architecture: {
@@ -185,8 +259,8 @@ export const projectsData: ProjectDetail[] = [
       tools: ["Docker", "Git", "GitHub Actions", "Vercel"]
     },
     keyMetrics: [
+      { label: "Internship Status", value: "Current / Active" },
       { label: "Dashboard Query Speed", value: "<85ms" },
-      { label: "Type Safety Coverage", value: "100%" },
       { label: "Data Integrity Rate", value: "99.99%" }
     ],
     images: [
@@ -197,8 +271,8 @@ export const projectsData: ProjectDetail[] = [
         featured: true
       }
     ],
-    githubUrl: "https://github.com/aditya-shastri",
-    liveUrl: "https://github.com/aditya-shastri",
+    githubUrl: "https://github.com/Adityashastri0216",
+    liveUrl: "https://github.com/Adityashastri0216",
     accent: {
       primary: "emerald",
       gradient: "from-emerald-500/20 via-teal-500/10 to-transparent",
@@ -208,6 +282,82 @@ export const projectsData: ProjectDetail[] = [
   },
   {
     id: "3",
+    slug: "magik-pro",
+    title: "MagikPro",
+    tagline: "High-Performance Health & Wellness Energy Drinks E-Commerce Platform Built with Next.js",
+    category: "E-Commerce & Wellness (Current Internship)",
+    year: "2024 - Present",
+    role: "Full Stack Intern (Current)",
+    timeline: "Ongoing (Current Internship)",
+    status: "Active / Current Internship",
+    description:
+      "A production-grade, responsive e-commerce web platform for MagikPro Premium Health & Wellness Energy Drinks, developed during Aditya's current software engineering internship, featuring dynamic wellness drink catalogs, interactive shopping cart, wishlist persistence, and optimized Next.js architecture.",
+    overview: [
+      "MagikPro (magikprodrinkmix.com) is a direct-to-consumer health and wellness e-commerce platform developed during my active internship to showcase and sell premium energy drink mixes and active lifestyle nutrition products.",
+      "The application was architected with Next.js, React, and Tailwind CSS, incorporating dynamic category filtering, instantaneous cart and wishlist drawers, responsive authentication modals, and high-performance server-rendered pages designed for fast consumer engagement."
+    ],
+    problem:
+      "Health & wellness consumers demand frictionless mobile shopping, instant nutritional clarity, fast product discovery, and effortless checkout experiences without slow catalog reloads.",
+    solution:
+      "Delivered a performant Next.js e-commerce storefront with modular React context providers (Cart & Wishlist), optimized product image delivery, responsive UI layouts, and seamless checkout pipelines.",
+    features: [
+      {
+        title: "Dynamic Wellness Drink Catalog",
+        description: "Interactive category browsing for energy drinks, hydration mixes, and recovery blends with real-time filtering and flavor sorting."
+      },
+      {
+        title: "Cart & Wishlist State Persistence",
+        description: "Global React context providers delivering instant add-to-cart feedback, quantity modifications, and wishlist synchronization."
+      },
+      {
+        title: "Direct-to-Consumer Checkout Pipeline",
+        description: "Streamlined purchase flow with cart review drawers, automated subtotal calculations, and secure payment processing."
+      },
+      {
+        title: "Customer Authentication & Profiles",
+        description: "Secure customer Sign In and Sign Up flows with session management and account order histories."
+      },
+      {
+        title: "Responsive Health Blog & Resources",
+        description: "SEO-friendly health articles, wellness tips, and hydration guides to drive organic search traffic and user retention."
+      }
+    ],
+    architecture: {
+      frontend: "Next.js App Router with TypeScript, Tailwind CSS design system, Lucide icons, responsive drawer navigation, and Toast notifications.",
+      backend: "Modular Next.js server actions and API route handlers managing product listings, customer inquiries, and cart verification.",
+      database: "Scalable cloud database schema tracking inventory availability, product variants, flavor profiles, and customer transactions.",
+      security: "Encrypted authentication tokens, secure HTTP headers, sanitization of form submissions, and CORS protection."
+    },
+    technologies: {
+      frontend: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Lucide React"],
+      backend: ["Node.js", "Next.js API Routes", "RESTful APIs", "JWT"],
+      database: ["MongoDB / PostgreSQL", "Cloud Database"],
+      tools: ["Turbopack", "Git", "Vercel", "npm", "Postman"]
+    },
+    keyMetrics: [
+      { label: "Internship Status", value: "Current / Active" },
+      { label: "Production Status", value: "Live Storefront" },
+      { label: "Live Domain", value: "magikprodrinkmix.com" }
+    ],
+    images: [
+      {
+        url: "/projects/magik-pro.png",
+        title: "MagikPro Official Storefront — 10+ Super Ingredients",
+        description: "Live production storefront showcasing MagikPro's Daily Health Drink Mix hero banner featuring 10+ super ingredients (Shatavari, Ashwagandha, Cocoa Beans, Makhana, Walnuts & Almonds) and product exploration.",
+        featured: true
+      }
+    ],
+    githubUrl: "https://github.com/Adityashastri0216",
+    liveUrl: "https://magikprodrinkmix.com/",
+    accent: {
+      primary: "blue",
+      gradient: "from-blue-500/20 via-cyan-500/10 to-transparent",
+      border: "border-blue-500/40",
+      glow: "shadow-blue-500/20"
+    }
+  },
+  {
+    id: "4",
     slug: "college-course-registration",
     title: "College Course Registration",
     tagline: "Console-Based Academic Course Registration & Database Management System Built in Eclipse",
@@ -273,8 +423,8 @@ export const projectsData: ProjectDetail[] = [
         featured: true
       }
     ],
-    githubUrl: "https://github.com/aditya-shastri",
-    liveUrl: "https://github.com/aditya-shastri",
+    githubUrl: "https://github.com/Adityashastri0216",
+    liveUrl: "https://github.com/Adityashastri0216",
     accent: {
       primary: "violet",
       gradient: "from-violet-500/20 via-purple-500/10 to-transparent",

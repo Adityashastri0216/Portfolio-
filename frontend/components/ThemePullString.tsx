@@ -119,8 +119,8 @@ export default function ThemePullString() {
         <div
           className={`absolute top-0 bottom-0 w-[2px] rounded-full transition-colors duration-200 ${
             isDark
-              ? "bg-slate-300 shadow-[0_0_6px_rgba(34,211,238,0.5)]"
-              : "bg-slate-700 shadow-[0_1px_2px_rgba(0,0,0,0.25)]"
+              ? "bg-blue-300 shadow-[0_0_6px_rgba(59,130,246,0.6)]"
+              : "bg-amber-600 shadow-[0_1px_2px_rgba(0,0,0,0.25)]"
           }`}
         />
 
@@ -129,7 +129,7 @@ export default function ThemePullString() {
           className="w-full h-full relative z-10"
           style={{
             backgroundImage: isDark
-              ? `radial-gradient(circle 2.5px at 35% 30%, #ffffff 0%, #cbd5e1 45%, #475569 85%, transparent 100%)`
+              ? `radial-gradient(circle 2.5px at 35% 30%, #ffffff 0%, #93c5fd 45%, #1e3a8a 85%, transparent 100%)`
               : `radial-gradient(circle 2.5px at 35% 30%, #fef3c7 0%, #d97706 45%, #78350f 85%, transparent 100%)`,
             backgroundSize: "12px 8px",
             backgroundRepeat: "repeat-y",
@@ -173,7 +173,7 @@ export default function ThemePullString() {
         <div
           className={`w-3.5 h-2 rounded-t-sm shadow-sm transition-colors duration-200 ${
             isDark
-              ? "bg-gradient-to-r from-slate-500 via-slate-300 to-slate-600 border-t border-slate-400"
+              ? "bg-gradient-to-r from-navy-700 via-blue-300 to-navy-700 border-t border-blue-400"
               : "bg-gradient-to-r from-amber-600 via-amber-300 to-amber-600 border-t border-amber-300"
           }`}
         />
@@ -182,7 +182,7 @@ export default function ThemePullString() {
         <div
           className={`relative w-6 h-9 rounded-b-2xl rounded-t-md flex items-center justify-center transition-all duration-300 shadow-lg ${
             isDark
-              ? "bg-gradient-to-b from-slate-700 via-slate-800 to-cyan-950 border border-cyan-500/40 shadow-cyan-500/20"
+              ? "bg-gradient-to-b from-navy-800 via-navy-900 to-navy-950 border border-blue-400/40 shadow-blue-500/25"
               : "bg-gradient-to-b from-amber-100 via-amber-200 to-amber-400 border border-amber-400/60 shadow-amber-500/30"
           }`}
         >
@@ -190,7 +190,7 @@ export default function ThemePullString() {
           <div
             className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
               isDark
-                ? "bg-cyan-400 shadow-[0_0_10px_#22d3ee]"
+                ? "bg-blue-400 shadow-[0_0_10px_#3b82f6]"
                 : "bg-amber-500 shadow-[0_0_10px_#f59e0b]"
             }`}
           />
@@ -204,7 +204,7 @@ export default function ThemePullString() {
         {/* Ring at bottom of pendant */}
         <div
           className={`w-3.5 h-3.5 rounded-full border-2 -mt-0.5 transition-colors ${
-            isDark ? "border-cyan-400/70" : "border-amber-500/80"
+            isDark ? "border-blue-400/80" : "border-amber-500/80"
           }`}
         />
 
@@ -216,7 +216,7 @@ export default function ThemePullString() {
               : "opacity-0 -translate-y-1"
           }`}
         >
-          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold tracking-wide bg-slate-900/90 text-cyan-300 dark:bg-white/90 dark:text-slate-900 border border-slate-700/60 dark:border-slate-300/60 shadow-xl backdrop-blur-md">
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold tracking-wide bg-white/95 text-slate-800 dark:bg-navy-900 dark:text-blue-200 border border-slate-200 dark:border-navy-700 shadow-xl backdrop-blur-md">
             <span>Pull for {isDark ? "Light" : "Dark"}</span>
             <motion.span
               animate={{ y: [0, 3, 0] }}
